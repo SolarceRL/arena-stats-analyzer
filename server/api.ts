@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
-import { getSummonerByName, getAllArenaMatches } from './riotClient';
-import { calculateStats } from '../src/utils/statsCalculator';
+import { getSummonerByName, getAllArenaMatches } from './riotClient.ts';
+import { calculateStats } from '../src/utils/statsCalculator.ts';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
